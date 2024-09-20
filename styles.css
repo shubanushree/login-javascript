@@ -1,0 +1,149 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwVoNjlFp_x4PwU11Ma8Ppv3gHWHahoZ13PQ&s') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .login-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        width: 350px;
+        margin-top: 150px;
+        transition: width 0.3s ease;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .input-field {
+        margin-bottom: 15px;
+    }
+
+    .input-field label {
+        color: white;
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .input-field input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 16px;
+    }
+
+    .next {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .remember-me label {
+        color: white;
+        font-size: 14px;
+    }
+
+    .forgot-password a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .forgot-password a:hover {
+        text-decoration: underline;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(0, 123, 255, 0.8);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: rgba(0, 123, 255, 1);
+    }
+    @media (max-width: 768px) {
+        .login-container {
+            width: 80%; 
+            padding: 20px; 
+        }
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQxrTD1nrIaDwAA9Yo0J4bCLMlP5yJQLCjEQ&s') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+    }
+    @media (max-width: 480px) {
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYskyEIyYrIzYmFvAR-HKMpIxj969RA9YpkXQcI5cZ6JSkmZolSgLDXakcv3WWB4CljsI&usqp=CAU') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            width: 90%; 
+            padding: 15px; 
+        }
+
+        h2 {
+            font-size: 1.5rem; 
+        }
+
+        .input-field input {
+            font-size: 14px; 
+        }
+
+        button {
+            font-size: 14px; 
+        }
+
+        .forgot-password a,
+        .remember-me label {
+            font-size: 12px; 
+        }
+    }
+    @media (max-width: 400px) {
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvUqhpFKuPfdSb4GGKMzXWKelLT6d-aC58jg&s') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .login-container {
+            width: 95%; 
+            padding: 10px; 
+        }
+
+        h2 {
+            font-size: 1.2rem; 
+        }
+
+        .input-field input {
+            font-size: 12px; 
+        }
+
+        button {
+            font-size: 12px; 
+        }
+    }
